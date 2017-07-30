@@ -26,8 +26,8 @@ def WelcomeToMyapp():
 CAT = "camping"
 WIDTH=2000
 SIZE = 1000
-APP_ID="uTHo5ujFViX3yuCPbe96"
-APP_CODE="unVqPgUDq8x6Ol6hQ4HLHQ"
+APP_ID=""
+APP_CODE=""
 @app.route('/apis/places/<startLat>/<startLon>/<desLat>/<desLon>')
 def getTopPlaces(startLat,startLon,desLat,desLon):
 
@@ -91,7 +91,7 @@ def getPlaceRating(name):
     url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
     params ={
         "query":name,
-        "key":"AIzaSyDQ1Lpe6zzwlA8RGZSnMn4fVMNbO88fO-k"
+        "key":""
     }
     place = json.loads(requests.get(url,params).content)
     place_id= "" if (place['status']=='ZERO_RESULTS' or 'place_id' not in place['results'][0]) else place['results'][0]['place_id']
