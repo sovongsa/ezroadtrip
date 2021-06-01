@@ -25,5 +25,5 @@ Shapely==1.5.17.post1
 six==1.10.0
 sklearn==0.0
 subprocess32==3.2.7
-urllib3==1.22
+urllib3==1.26.5
 Werkzeug==0.12.2
